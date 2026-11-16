@@ -1,21 +1,15 @@
 # Portfólio — Larissa Descovi
 
-Site estático com página inicial, quatro páginas de cases e dez artigos importados do arquivo de exportação do Medium.
+## Estrutura dos cases
 
-## Executar localmente
+1. `cases/central-qualidade/` — Central de Qualidade e Fiscalização, com 32 capturas reais e documentação técnica completa.
+2. `cases/extensao-suporte/` — Extensão Suporte Franquias, com 9 capturas reais.
+3. `cases/skills-agentes/` — Ecossistema com inventário documentado de 35 skills próprias, agentes, revisores e rotinas.
 
-```bash
-npm install
-npm run build
-```
+## Build e publicação na Vercel
 
-A pasta `dist/` contém o site pronto para publicação.
+- Build command: `npm run build`
+- Output directory: `dist`
+- Install command: `npm install`
 
-## Publicar na Vercel
-
-- Framework Preset: Other
-- Build Command: `npm run build`
-- Output Directory: `dist`
-- Install Command: `npm install`
-
-As páginas de artigos ficam em `/artigos/` e as páginas de cases em `/cases/`.
+O `build.js` copia a página inicial, artigos, cases e a pasta `assets` para `dist`. A pasta `assets` é necessária para que as capturas reais apareçam nas páginas publicadas.

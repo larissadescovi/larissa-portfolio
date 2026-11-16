@@ -8,7 +8,7 @@ fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
 
 // Publica a página inicial e todas as páginas individuais de cases e artigos.
-for (const entry of ['index.html', 'artigos', 'cases']) {
+for (const entry of ['index.html', 'artigos', 'cases', 'assets']) {
   const source = path.join(root, entry);
   const destination = path.join(output, entry);
   if (fs.existsSync(source)) {
