@@ -1,30 +1,21 @@
 # Portfólio — Larissa Descovi
 
-Site profissional estático, responsivo e pronto para publicação na Vercel.
+Site estático com página inicial, quatro páginas de cases e dez artigos importados do arquivo de exportação do Medium.
 
 ## Executar localmente
 
-Abra `index.html` no navegador ou execute:
-
 ```bash
+npm install
 npm run build
 ```
 
-O comando gera a versão de publicação na pasta `dist/`.
+A pasta `dist/` contém o site pronto para publicação.
 
-## Publicar na Vercel via GitHub
+## Publicar na Vercel
 
-1. Crie um repositório no GitHub (por exemplo, `larissa-portfolio`).
-2. Extraia este ZIP e envie para a raiz do repositório os arquivos `index.html`, `package.json`, `build.js`, `.gitignore` e `README.md`.
-3. Na Vercel, selecione **Add New → Project** e importe o repositório.
-4. Em **Framework Preset**, selecione **Other**.
-5. Em **Build Command**, use `npm run build`.
-6. Em **Output Directory**, use `dist`.
-7. Clique em **Deploy**.
+- Framework Preset: Other
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Install Command: `npm install`
 
-Depois, cada atualização enviada ao branch principal do GitHub será publicada automaticamente pela Vercel.
-
-## Links
-
-- LinkedIn: https://www.linkedin.com/in/larissa-descovi
-- Medium: https://medium.com/@larissa.descovi
+As páginas de artigos ficam em `/artigos/` e as páginas de cases em `/cases/`.

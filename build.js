@@ -3,7 +3,17 @@ const path = require('node:path');
 
 const root = __dirname;
 const output = path.join(root, 'dist');
+
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
-fs.copyFileSync(path.join(root, 'index.html'), path.join(output, 'index.html'));
-console.log('Portfolio pronto para publicação em dist/.');
+
+// Publica a página inicial e todas as páginas individuais de cases e artigos.
+for (const entry of ['index.html', 'artigos', 'cases']) {
+  const source = path.join(root, entry);
+  const destination = path.join(output, entry);
+  if (fs.existsSync(source)) {
+    fs.cpSync(source, destination, { recursive: true });
+  }
+}
+
+console.log('Portfólio pronto para publicação em dist/.');
