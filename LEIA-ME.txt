@@ -1,0 +1,25 @@
+# Portfólio Larissa Descovi — três cases prontos para publicação
+
+## Conteúdo
+- `index.html`: página inicial com os três cards e links para os cases.
+- `cases/central-qualidade.html`: case da Central de Qualidade e Fiscalização, com galeria das capturas reais.
+- `cases/extensao-suporte.html`: case da Extensão Suporte Franquias, com galeria das capturas reais.
+- `cases/ecossistema-skills.html`: case do Ecossistema de Skills e Agentes de IA, com visual de síntese do levantamento.
+- `assets/cases/`: imagens usadas nas páginas.
+- `docs/`: documentação técnica completa e materiais de apoio.
+
+## Anonimização e precisão
+- As capturas das telas foram mantidas; nomes pessoais foram anonimizados.
+- A Central usa a documentação HTML anonimizada mais recente recebida em 21/11/2026.
+- A extensão apresenta Stays, Sapron e NewByte conforme os materiais de origem. Não foram inventados detalhes de linguagem ou framework da extensão.
+- O inventário de skills registra 35 skills próprias, 3 agentes, 3 revisores, 5 rotinas agendadas e 4 projetos estruturados. O consumo de tokens não foi informado porque não há histórico confiável documentado.
+
+## Publicação no site atual (Vercel / estático)
+Este pacote foi preparado para a estrutura estática existente (`index.html`, `cases/`, `assets/`, `docs/`).
+1. Extraia o ZIP.
+2. Abra a pasta `paginas-e-documentacao/portfolio_larissa_revisado/`.
+3. Copie o conteúdo dessa pasta para a raiz do repositório do site, mantendo as pastas `cases`, `assets` e `docs`.
+4. Faça commit e push para a branch conectada à Vercel.
+5. A configuração existente de build estático (`npm run build`, saída `dist`) deve ser preservada.
+
+Não substitua arquivos de configuração do projeto sem conferir o repositório atual.
